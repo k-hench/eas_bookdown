@@ -1,0 +1,8 @@
+book_filename: "Ecology of Animal Societies - Bookdown Template"
+chapter_name: ""
+repo: https://github.com/k-hench/eas_bookdown
+output_dir: ../docs
+rmd_files: ["index.Rmd", "0_first_script.Rmd", "1_second_script.Rmd", "2_markdown_tips.Rmd", "3_template_script.Rmd", "Z_refs.Rmd"]
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
+delete_merged_file: True

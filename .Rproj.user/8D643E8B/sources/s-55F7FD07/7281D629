@@ -1,0 +1,25 @@
+{
+    "id": "7281D629",
+    "path": "~/work/crofoot_lab/eas_bookdown/vignettes/2_md_tips.Rmd",
+    "project_path": "vignettes/2_md_tips.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1612462247227.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "chunk_output_type": "console",
+        "cursorPosition": "87,150",
+        "scrollLine": "84"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1612464262,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1612464262360,
+    "read_only": false,
+    "read_only_alternatives": []
+}
