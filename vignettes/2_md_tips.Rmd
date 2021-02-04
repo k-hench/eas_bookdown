@@ -39,7 +39,7 @@ This is a *think* box demo!
 This is a *think* box demo!
 :::
 
-(If you are wondering what is happening under the hood: markdown will translates a `:::something`...`:::` section into `html` in the form of `<div class="something">`...`</div>`.)
+(If you are wondering what is happening under the hood: markdown will translate a `:::something`...`:::` section into `html` in the form of `<div class="something">`...`</div>`.)
 
 ## Saving and Loading Intermediate Steps
 
