@@ -124,7 +124,7 @@ The *Terminal* window is different from the *Console* window that you might be u
 In the *Terminal* window you access the shell of your system directly. Make sure that the following is in order before you proceed:
 
 - running `pwd` should provide the *path* of this repository (eg in my case `/path/to/eas_bookdown`)
-- `scss` should be installed on your system: if you run `which scss` in the *Terminal window*, you should receive a prompt like eg. `/home/usr_name/gems/bin/scss`. If this prompts *nothing*, make sure to [install `scss` first](https://sass-lang.com/install)
+- `sass` should be installed on your system: if you run `which sass` in the *Terminal window*, you should receive a prompt like eg. `/home/usr_name/gems/bin/sass`. If this prompts *nothing*, make sure to [install `sass` first](https://sass-lang.com/install)
 :::
 
 The actual conversion `scss` $\rightarrow$ `css`:

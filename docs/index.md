@@ -22,7 +22,7 @@ editor_options:
 
 Hello 👋,
 
-you are looking at a minimal {bookdown} template that can be used to document your coding projects.
+you are looking at a minimal {[bookdown](https://bookdown.org/)} template that can be used to document your coding projects.
 
 The documentation of this template is broken down into several chunks:
 

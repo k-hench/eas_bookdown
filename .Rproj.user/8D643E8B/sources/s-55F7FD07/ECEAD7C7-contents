@@ -1,8 +1,0 @@
-book_filename: "eas_template"
-chapter_name: ""
-repo: https://github.com/k-hench/eas_bookdown
-output_dir: ../docs
-rmd_files: ["index.Rmd", "0_config.Rmd", "1_compile.Rmd", "2_md_tips.Rmd", "3_template_script.Rmd", "Z_refs.Rmd"]
-clean: [packages.bib, bookdown.bbl]
-new_session: yes
-delete_merged_file: True
