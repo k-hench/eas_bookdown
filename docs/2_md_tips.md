@@ -51,7 +51,7 @@ This is how using those code blocks usually looks in my scripts:
 
 ```
 `​``{r class.source="bg-save", eval = FALSE}
-# run interactively one and export result, but dont run on compilation
+# run interactively one and export result, but don't run on compilation
 
 intermendiate_step <- complicated_function(data)
 
@@ -70,7 +70,7 @@ The resulting output will then look like this (the second code block is hidden):
 
 
 ```{.r .bg-save}
-# run interactively one and export result
+# run interactively one and export result, but don't run on compilation
 
 intermendiate_step <- complicated_function(data)
 

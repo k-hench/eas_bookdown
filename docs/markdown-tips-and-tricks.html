@@ -24,7 +24,7 @@
 <meta name="author" content="Author Name" />
 
 
-<meta name="date" content="2021-02-04" />
+<meta name="date" content="2021-02-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -743,7 +743,7 @@ Those code blocks with long run-times are indicated by their slightly darker bac
 <p>When saving content while building a Rmarkdown script interactively, you can use <em>bg-save</em> code blocks to indicate that those blocks are not actually run.
 This is how using those code blocks usually looks in my scripts:</p>
 <pre><code>`​``{r class.source=&quot;bg-save&quot;, eval = FALSE}
-# run interactively one and export result, but dont run on compilation
+# run interactively one and export result, but don&#39;t run on compilation
 
 intermendiate_step &lt;- complicated_function(data)
 
@@ -755,7 +755,7 @@ saveRDS(object = intermendiate_step,
 intermendiate_step &lt;- readRDS(file = &quot;steps/intermendiate_step.Rds&quot;)
 `​``</code></pre>
 <p>The resulting output will then look like this (the second code block is hidden):</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r bg-save"><code class="sourceCode r"><span id="cb14-1"><a href="markdown-tips-and-tricks.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># run interactively one and export result</span></span>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r bg-save"><code class="sourceCode r"><span id="cb14-1"><a href="markdown-tips-and-tricks.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># run interactively one and export result, but don&#39;t run on compilation</span></span>
 <span id="cb14-2"><a href="markdown-tips-and-tricks.html#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="markdown-tips-and-tricks.html#cb14-3" aria-hidden="true" tabindex="-1"></a>intermendiate_step <span class="ot">&lt;-</span> <span class="fu">complicated_function</span>(data)</span>
 <span id="cb14-4"><a href="markdown-tips-and-tricks.html#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
