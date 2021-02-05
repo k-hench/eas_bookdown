@@ -728,25 +728,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">2.1.1</span> Configuration within <code>_bookdown.yml</code></h3>
 <p>Here, you adjust the Rmd files that are collectively rendered into the bookdown document.
 Update the entry <code>rmd_files:</code> to add more/ change Rmarkdown files.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb1-1"><a href="configuration.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rmd_files</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">&quot;index.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;0_config.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;1_compile.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;2_md_tips.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;3_template_script.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;Z_refs.Rmd&quot;</span><span class="kw">]</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb3-1"><a href="configuration.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rmd_files</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">&quot;index.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;0_config.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;1_compile.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;2_md_tips.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;3_template_script.Rmd&quot;</span><span class="kw">,</span><span class="at"> </span><span class="st">&quot;Z_refs.Rmd&quot;</span><span class="kw">]</span></span></code></pre></div>
 <p><span class="math inline">\(\rightarrow\)</span> kick out what you don’t want and add new files if needed (exceptions: don’t kick out <code>index.Rmd</code> and <code>Z_refs.Rmd</code>).</p>
 <p>Other parameters that need configuration are <code>book_filename:</code> and <code>repo:</code> (unfortunately, some things need to be updated at several places: here <em>and</em> in the other important files 🙄).</p>
 <p>This is not really important, but the naming of the bookdown file (in this case <code>eas_template.rds</code>) should probably reflect the project rater than this template.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb2-1"><a href="configuration.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">book_filename</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;eas_template&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="configuration.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">book_filename</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;eas_template&quot;</span></span></code></pre></div>
 <p>You probably don’t need a reference to this template in your project.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb3-1"><a href="configuration.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">repo</span><span class="kw">:</span><span class="at"> https://github.com/k-hench/eas_bookdown</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb5-1"><a href="configuration.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">repo</span><span class="kw">:</span><span class="at"> https://github.com/k-hench/eas_bookdown</span></span></code></pre></div>
 </div>
 <div id="configuration-within-_output.yml" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Configuration within <code>_output.yml</code></h3>
 <p>This is the file that mainly creates the TOC on the left hand side of the document.
 Here, you can adjust the topmost entry (which currently points to the department homepage):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="configuration.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="configuration.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">collapse</span><span class="kw">:</span><span class="at"> section</span></span>
-<span id="cb4-3"><a href="configuration.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">  before</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-4"><a href="configuration.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    &lt;li&gt;&lt;a href=&quot;https://www.ab.mpg.de/crofoot&quot;&gt;Ecology of Animal Societies&lt;/a&gt;&lt;/li&gt;</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb6-1"><a href="configuration.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="configuration.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">collapse</span><span class="kw">:</span><span class="at"> section</span></span>
+<span id="cb6-3"><a href="configuration.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">  before</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb6-4"><a href="configuration.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    &lt;li&gt;&lt;a href=&quot;https://www.ab.mpg.de/crofoot&quot;&gt;Ecology of Animal Societies&lt;/a&gt;&lt;/li&gt;</span></code></pre></div>
 <p>Also, you can remove or replace the EAS logo here:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb5-1"><a href="configuration.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">after</span><span class="kw">: </span><span class="at"> </span><span class="ch">|</span></span>
-<span id="cb5-2"><a href="configuration.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  &lt;img style=&quot;position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;&quot; src=&quot;./img/eas_cropped.png&quot;&gt;</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb7-1"><a href="configuration.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">after</span><span class="kw">: </span><span class="at"> </span><span class="ch">|</span></span>
+<span id="cb7-2"><a href="configuration.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  &lt;img style=&quot;position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;&quot; src=&quot;./img/eas_cropped.png&quot;&gt;</span></code></pre></div>
 </div>
 <div id="configuration-within-index.rmd" class="section level3" number="2.1.3">
 <h3><span class="header-section-number">2.1.3</span> Configuration within <code>index.Rmd</code></h3>
@@ -775,10 +775,10 @@ These are set in the <code>yaml</code>-header of the document (the part at the b
 <h3><span class="header-section-number">2.3.1</span> Default Code Folding</h3>
 <p>This template comes with the option to toggle the folding of code blocks.
 Currently, the default is set to expand the code-blocks - if you want them folded by default you can adjust by switching to <code>create_html_header("fold")</code> within the file <code>index.Rmd</code>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb6-1"><a href="configuration.html#cb6-1" aria-hidden="true" tabindex="-1"></a>`​``{r set_fold, include=FALSE}</span>
-<span id="cb6-2"><a href="configuration.html#cb6-2" aria-hidden="true" tabindex="-1"></a>source(&quot;R/initial_folding.R&quot;)</span>
-<span id="cb6-3"><a href="configuration.html#cb6-3" aria-hidden="true" tabindex="-1"></a>create_html_header(&quot;show&quot;) # either &quot;show&quot; or &quot;fold&quot;</span>
-<span id="cb6-4"><a href="configuration.html#cb6-4" aria-hidden="true" tabindex="-1"></a>`​``</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb8-1"><a href="configuration.html#cb8-1" aria-hidden="true" tabindex="-1"></a>`​``{r set_fold, include=FALSE}</span>
+<span id="cb8-2"><a href="configuration.html#cb8-2" aria-hidden="true" tabindex="-1"></a>source(&quot;R/initial_folding.R&quot;)</span>
+<span id="cb8-3"><a href="configuration.html#cb8-3" aria-hidden="true" tabindex="-1"></a>create_html_header(&quot;show&quot;) # either &quot;show&quot; or &quot;fold&quot;</span>
+<span id="cb8-4"><a href="configuration.html#cb8-4" aria-hidden="true" tabindex="-1"></a>`​``</span></code></pre></div>
 </div>
 <div id="color-scheme" class="section level3" number="2.3.2">
 <h3><span class="header-section-number">2.3.2</span> Color Scheme</h3>
@@ -800,8 +800,8 @@ In the <em>Terminal</em> window you access the shell of your system directly. Ma
 </ul>
 </div>
 <p>The actual conversion <code>scss</code> <span class="math inline">\(\rightarrow\)</span> <code>css</code>:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="configuration.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> vignettes</span>
-<span id="cb8-2"><a href="configuration.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">sass</span> --watch style.scss:style.css</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="configuration.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> vignettes</span>
+<span id="cb10-2"><a href="configuration.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">sass</span> --watch style.scss:style.css</span></code></pre></div>
 <p>After this, <code>sass</code> will keep running and <em>listen</em> to changes in your <code>css</code> file.
 Hit <code>&lt;ctrl&gt;&lt;c&gt;</code> to make it stop.</p>
 <hr />

@@ -732,6 +732,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./template-script.html">5 Template Script</a>: This is a blank section. Its purpose is to provide a minimal template that can be copied to add more sections.</li>
 <li><a href="./references.html">6 References</a>: This is where all cited sources of your project will be listed.</li>
 </ul>
+<p>To be able to use this in your own projects you will need to <code>R</code> as well as the {bookdown} package installed:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
+<p>Note that the template also uses the (non-cran) package {<a href="https://github.com/hadley/emo">emo</a>} to be able to use emojis within Rmarkdown.</p>
+<p>To be able to do this as well, install {emo} with the {<a href="https://remotes.r-lib.org/">remotes</a>} package:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;remotes&quot;</span>)</span>
+<span id="cb2-2"><a href="index.html#cb2-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;hadley/emo&quot;</span>)</span></code></pre></div>
 <p>Feel free to adapt this template to your needs 😄.</p>
 <div id="first-special-feature" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> First Special Feature</h2>
