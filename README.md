@@ -5,15 +5,15 @@ This is a small template for a {[bookdown](https://bookdown.org/)} document that
 To be able to use this in your own projects you will need to `R` as well as the {bookdown} package installed:
 
 ```r
-install.packacges("bookdown")
+install.packages("bookdown")
 ```
 
-Note that the template also uses the (non-cran) packae {[emo](https://github.com/hadley/emo)} to be able to use emojis within Rmarkdown.
+Note that the template also uses the (non-cran) package {[emo](https://github.com/hadley/emo)} to be able to use emojis within Rmarkdown.
 
 To be able to do this as well, install {emo} with the {[remotes](https://remotes.r-lib.org/)} package:
 
 ```r
-install.packacges("remotes")
+install.packages("remotes")
 remotes::install_github("hadley/emo")
 ```
 
