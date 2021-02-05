@@ -40,7 +40,7 @@ This is a *think* box demo!
 
 ## Saving and Loading Intermediate Steps
 
-To minimize run-time when compiling my project documentation, I often pre-compute and save several intermediate steps of the scripts (eg. to a specific path - for instance  a folder called `./steps/` within the main directory).
+To minimize run-time when compiling my project documentation, I often pre-compute and save several intermediate steps of the scripts (eg. to a specific path --- for instance  a folder called `./steps/` within the main directory).
 I the load those intermediate steps during compilation (s. [3 Compilation](compilation.html) for how to compile the document).
 
 Because of this, I want to indicate if a specific code block is not actually run by {knitr} (but their results are loaded in a hidden code block afterwards).

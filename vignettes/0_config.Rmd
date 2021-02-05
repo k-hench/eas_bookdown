@@ -110,7 +110,7 @@ create_html_header("show") # either "show" or "fold"
 If you want to change the color scheme, you can update the `css` stylesheet that is used within the bookdown project (`style.css`).
 Currently the template uses two main colors that come in dark and light flavor respectively (<span class="c1l">color1 (light)</span>, <span class="c1d">color1 (dark)</span>, <span class="c2l">color2 (light)</span>, <span class="c2d">color2 (dark)</span>)
 
-To make this a little more convenient, you can use the provided pre-cursor `scss` file (`scss` can use variables while `css` can not - so this is convenient to swap eg. colors consistently in a style-sheet).
+To make this a little more convenient, you can use the provided pre-cursor `scss` file (`scss` can use variables while `css` can not --- so this is convenient to swap eg. colors consistently in a style-sheet).
 
 To update the color scheme, open the `style.scss` file and adjust the color settings right at the beginning (by swapping the [hex-color codes](https://www.hexcolortool.com/#029c8c)):
 

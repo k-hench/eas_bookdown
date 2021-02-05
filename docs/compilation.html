@@ -717,12 +717,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">3</span> Compilation</h1>
 <p>To compile the the entire document, the {bookdown} package is used.
 Unfortunately, the <code>Rmd</code> files (in fact the entire {bookdown} project) is located within a sub-folder and not in the main folder of the repositories R-project (where the <code>.Rproj</code> file is located).</p>
-<p>As you will see, this introduces mild inconveniences - yet this is intentional:</p>
+<p>As you will see, this introduces mild inconveniences — yet this is intentional:</p>
 <p>I often use standalone <code>R</code> scripts to explore or test ideas (to <em>sketch out stuff</em>) or I include standalone scripts that are run from the command-line (eg. something like <code>Rscript --vanilla R/script_xyz.R</code>).
 I found it to be cleanest if <em>all</em> my <code>R</code> code assumes the base directory of the repository as working directory (this also has the added benefit that code from the <code>Rmd</code> scripts is executable in interactive sessions).
 Yet, to avoid unnecessary clutter in the base directory, the bookdown project is collected within the <code>./vignettes</code> sub-folder.</p>
 <p>So, for this to work, two things need to be set:
-Firstly, each <code>Rmd</code> script needs to point to it’s parent directory (the base directory) at the start - this is what the <code>knitr::opts_knit$set(root.dir = '../')</code> in every first code block does (don’t run that code block interactively).</p>
+Firstly, each <code>Rmd</code> script needs to point to it’s parent directory (the base directory) at the start — this is what the <code>knitr::opts_knit$set(root.dir = '../')</code> in every first code block does (don’t run that code block interactively).</p>
 <p>Secondly (the inconvenient part), for the <em>compilation</em> of the bookdown document we need to switch into the <code>./vignettes</code> folder:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="compilation.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;vignettes&quot;</span>)                   <span class="co"># enter vignettes sub-folder</span></span>
 <span id="cb9-2"><a href="compilation.html#cb9-2" aria-hidden="true" tabindex="-1"></a>bookdown<span class="sc">::</span><span class="fu">render_book</span>(<span class="st">&quot;index.Rmd&quot;</span>)   <span class="co"># compile</span></span>

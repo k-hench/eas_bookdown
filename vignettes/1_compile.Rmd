@@ -16,14 +16,14 @@ knitr::opts_knit$set(root.dir = '../')
 To compile the the entire document, the {bookdown} package is used.
 Unfortunately, the `Rmd` files (in fact the entire {bookdown} project) is located within a sub-folder and not in the main folder of the repositories R-project (where the `.Rproj` file is located).
 
-As you will see, this introduces mild inconveniences - yet this is intentional:
+As you will see, this introduces mild inconveniences --- yet this is intentional:
 
 I often use standalone `R` scripts to explore or test ideas (to *sketch out stuff*) or I include standalone scripts that are run from the command-line (eg. something like `Rscript --vanilla R/script_xyz.R`).
 I found it to be cleanest if *all* my `R` code assumes the base directory of the repository as working directory (this also has the added benefit that code from the `Rmd` scripts is executable in interactive sessions).
 Yet, to avoid unnecessary clutter in the base directory, the bookdown project is collected within the `./vignettes` sub-folder.
 
 So, for this to work, two things need to be set: 
-Firstly, each `Rmd` script needs to point to it's parent directory (the base directory) at the start - this is what the `knitr::opts_knit$set(root.dir = '../')` in every first code block does (don't run that code block interactively).
+Firstly, each `Rmd` script needs to point to it's parent directory (the base directory) at the start --- this is what the `knitr::opts_knit$set(root.dir = '../')` in every first code block does (don't run that code block interactively).
 
 Secondly (the inconvenient part), for the *compilation* of the bookdown document we need to switch into the `./vignettes` folder:
 

@@ -45,7 +45,7 @@ Feel free to adapt this template to your needs `r emo::ji("smile")`.
 
 ## First Special Feature
 
-Individual **code blocks can be collapsed and expanded** using the collapse button (this specific demo slider blow is a dummy though - look in the next chapters for working examples...):
+Individual **code blocks can be collapsed and expanded** using the collapse button (this specific demo slider blow is a dummy though --- look in the next chapters for working examples...):
 
 <div class="demoslider"><div class="demobg"><div class="demonob"></div></div></div>
 
