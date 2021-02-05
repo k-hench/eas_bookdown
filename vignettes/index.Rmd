@@ -68,6 +68,6 @@ Individual **code blocks can be collapsed and expanded** using the collapse butt
 
 In the upper right corner, there is also the option to **toggle the code collapsing globally**:  <button type="button" class="btn btn-default btn-xs dropdown-toggle">global code</button> 
 
-Collapsing your code can really help to get an eagle-perspective on your scripts and to asses the degree of documentation as well as the flow of thoughts throughout / the logic behind your script.
+(Collapsing your code can really help to get an eagle-perspective on your scripts and to asses the degree of documentation as well as the flow of thoughts throughout / the logic behind your script.)
 
 ---
