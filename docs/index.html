@@ -666,7 +666,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#first-special-feature"><i class="fa fa-check"></i><b>1.1</b> First Special Feature</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#dependencies"><i class="fa fa-check"></i><b>1.1</b> Dependencies</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#first-special-feature"><i class="fa fa-check"></i><b>1.2</b> First Special Feature</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="configuration.html"><a href="configuration.html"><i class="fa fa-check"></i><b>2</b> Configuration</a>
 <ul>
@@ -732,15 +733,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./template-script.html">5 Template Script</a>: This is a blank section. Its purpose is to provide a minimal template that can be copied to add more sections.</li>
 <li><a href="./references.html">6 References</a>: This is where all cited sources of your project will be listed.</li>
 </ul>
+<div id="dependencies" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Dependencies</h2>
 <p>To be able to use this in your own projects you will need to <code>R</code> as well as the {bookdown} package installed:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
-<p>Note that the template also uses the (non-cran) package {<a href="https://github.com/hadley/emo">emo</a>} to be able to use emojis within Rmarkdown.</p>
+<p>Note, that the template also uses the (non-cran) package {<a href="https://github.com/hadley/emo">emo</a>} to be able to use emojis within Rmarkdown.</p>
 <p>To be able to do this as well, install {emo} with the {<a href="https://remotes.r-lib.org/">remotes</a>} package:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;remotes&quot;</span>)</span>
 <span id="cb2-2"><a href="index.html#cb2-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;hadley/emo&quot;</span>)</span></code></pre></div>
 <p>Feel free to adapt this template to your needs 😄.</p>
-<div id="first-special-feature" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> First Special Feature</h2>
+</div>
+<div id="first-special-feature" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> First Special Feature</h2>
 <p>Individual <strong>code blocks can be collapsed and expanded</strong> using the collapse button (this specific demo slider blow is a dummy though — look in the next chapters for working examples…):</p>
 <div class="demoslider">
 <div class="demobg">

@@ -33,13 +33,15 @@ The documentation of this template is broken down into several chunks:
 - [5 Template Script](./template-script.html): This is a blank section. Its purpose is to provide a minimal template that can be copied to add more sections.
 - [6 References](./references.html): This is where all cited sources of your project will be listed.
 
+## Dependencies
+
 To be able to use this in your own projects you will need to `R` as well as the {bookdown} package installed:
 
 ```r
 install.packages("bookdown")
 ```
 
-Note that the template also uses the (non-cran) package {[emo](https://github.com/hadley/emo)} to be able to use emojis within Rmarkdown.
+Note, that the template also uses the (non-cran) package {[emo](https://github.com/hadley/emo)} to be able to use emojis within Rmarkdown.
 
 To be able to do this as well, install {emo} with the {[remotes](https://remotes.r-lib.org/)} package:
 
