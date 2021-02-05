@@ -47,20 +47,20 @@ repo: https://github.com/k-hench/eas_bookdown
 ### Configuration within `_output.yml`
 
 This is the file that mainly creates the TOC on the left hand side of the document.
-Here, you can adjust the topmost entry (which is currently set to a duplication of the github repo):
+Here, you can adjust the topmost entry (which currently points to the department homepage):
 
 ```yml
 toc:
   collapse: section
   before: |
-    <li><a href="https://github.com/k-hench/eas_bookdown">github repository</a></li>
+    <li><a href="https://www.ab.mpg.de/crofoot">Ecology of Animal Societies</a></li>
 ```
 
-Also, you can remove or replace the MPI logo here:
+Also, you can remove or replace the EAS logo here:
 
 ```yml
 after:  |
-  <img style="position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;" src="./img/eas_logo.svg">
+  <img style="position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;" src="./img/eas_cropped.png">
 ```
 
 ### Configuration within `index.Rmd`
@@ -110,11 +110,10 @@ To make this a little more convenient, you can use the provided pre-cursor `scss
 To update the color scheme, open the `style.scss` file and adjust the color settings right at the beginning (by swapping the [hex-color codes](https://www.hexcolortool.com/#029c8c)):
 
 ```scss
-$primary_color_d: #029c8c;
-$primary_color_l: #6fe0d5;
-$secondary_color_d: #674EA7;
-$secondary_color_l: #a797cf;
-$secondary_color_a: #a797cfcc;
+$primary_color_d: #34534D;
+$primary_color_l: #94B9B2;
+$secondary_color_d: #5E443B;
+$secondary_color_l: #B3848D;
 ```
 
 To then re-compile the `css` file (which is the one that is actually used within bookdown), run the following within the *Terminal* window of Rstudio.

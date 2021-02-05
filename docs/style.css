@@ -1,30 +1,30 @@
 h1, h2 {
   line-height: 1.3em;
-  color: #674EA7; }
+  color: #B3848D; }
 
 .c1l, .c1d, .c2l, .c2d {
   padding: .2em .4em;
   border-radius: 3pt; }
 
 .c1l {
-  background: #6fe0d5; }
+  background: #94B9B2; }
 
 .c1d {
-  background: #029c8c;
+  background: #34534D;
   color: #ffffffcc; }
 
 .c2l {
-  background: #a797cf; }
+  background: #B3848D; }
 
 .c2d {
-  background: #674EA7;
+  background: #5E443B;
   color: #ffffffcc; }
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active > a {
-  color: #029c8c !important; }
+  color: #94B9B2 !important; }
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: #029c8c !important; }
+  color: #94B9B2 !important; }
 
 hr {
   height: 1px !important; }
@@ -40,24 +40,24 @@ hr {
 
 .beware {
   background-image: url("img/beware.svg");
-  color: #674EA7;
+  color: #5E443B;
   transition-duration: 0.2s;
-  background-color: #a797cf;
-  border: solid 3px #674EA7; }
+  background-color: #B3848D;
+  border: solid 3px #5E443B; }
 
 .beware code {
-  background: #674EA7 !important;
-  color: #a797cf !important; }
+  background: #5E443B !important;
+  color: #B3848D !important; }
 
 .think {
   background-image: url("img/think.svg");
-  color: #6fe0d5;
-  background-color: #029c8c;
-  border: solid 3px #6fe0d5; }
+  color: #94B9B2;
+  background-color: #34534D;
+  border: solid 3px #94B9B2; }
 
 .think code {
-  background: #6fe0d5 !important;
-  color: #029c8c !important; }
+  background: #94B9B2 !important;
+  color: #34534D !important; }
 
 /* code folding buttons ----------- */
 .button {
@@ -115,7 +115,7 @@ hr {
   color: #000; }
 
 .dropdown-menu a:hover {
-  color: #029c8c; }
+  color: #34534D; }
 
 .checktrue, .demoslider {
   position: relative;
@@ -165,7 +165,7 @@ hr {
   box-shadow: inset 0 0 0.2em 0.02em rgba(0, 0, 0, 0.5); }
 
 input:checked + .checktrue::before {
-  background: #a797cfcc; }
+  background: #B3848D; }
 
 input:checked + .checktrue::after {
   left: 33px; }

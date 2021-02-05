@@ -661,7 +661,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://github.com/k-hench/eas_bookdown">github repository</a></li>
+<li><a href="https://www.ab.mpg.de/crofoot">Ecology of Animal Societies</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a>
@@ -694,7 +694,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="template-script.html"><a href="template-script.html"><i class="fa fa-check"></i><b>5</b> Template Script</a></li>
 <li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
-<img style="position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;" src="./img/eas_logo.svg">
+<img style="position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;" src="./img/eas_cropped.png">
 
 </ul>
 
@@ -739,14 +739,14 @@ Update the entry <code>rmd_files:</code> to add more/ change Rmarkdown files.</p
 <div id="configuration-within-_output.yml" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Configuration within <code>_output.yml</code></h3>
 <p>This is the file that mainly creates the TOC on the left hand side of the document.
-Here, you can adjust the topmost entry (which is currently set to a duplication of the github repo):</p>
+Here, you can adjust the topmost entry (which currently points to the department homepage):</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="configuration.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span></span>
 <span id="cb4-2"><a href="configuration.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">collapse</span><span class="kw">:</span><span class="at"> section</span></span>
 <span id="cb4-3"><a href="configuration.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">  before</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-4"><a href="configuration.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    &lt;li&gt;&lt;a href=&quot;https://github.com/k-hench/eas_bookdown&quot;&gt;github repository&lt;/a&gt;&lt;/li&gt;</span></code></pre></div>
-<p>Also, you can remove or replace the MPI logo here:</p>
+<span id="cb4-4"><a href="configuration.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    &lt;li&gt;&lt;a href=&quot;https://www.ab.mpg.de/crofoot&quot;&gt;Ecology of Animal Societies&lt;/a&gt;&lt;/li&gt;</span></code></pre></div>
+<p>Also, you can remove or replace the EAS logo here:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb5-1"><a href="configuration.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">after</span><span class="kw">: </span><span class="at"> </span><span class="ch">|</span></span>
-<span id="cb5-2"><a href="configuration.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  &lt;img style=&quot;position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;&quot; src=&quot;./img/eas_logo.svg&quot;&gt;</span></code></pre></div>
+<span id="cb5-2"><a href="configuration.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  &lt;img style=&quot;position:absolute; bottom:0px; left:0px; width:100%; pointer-events:none;&quot; src=&quot;./img/eas_cropped.png&quot;&gt;</span></code></pre></div>
 </div>
 <div id="configuration-within-index.rmd" class="section level3" number="2.1.3">
 <h3><span class="header-section-number">2.1.3</span> Configuration within <code>index.Rmd</code></h3>
@@ -786,11 +786,10 @@ Currently, the default is set to expand the code-blocks - if you want them folde
 Currently the template uses two main colors that come in dark and light flavor respectively (<span class="c1l">color1 (light)</span>, <span class="c1d">color1 (dark)</span>, <span class="c2l">color2 (light)</span>, <span class="c2d">color2 (dark)</span>)</p>
 <p>To make this a little more convenient, you can use the provided pre-cursor <code>scss</code> file (<code>scss</code> can use variables while <code>css</code> can not — so this is convenient to swap eg. colors consistently in a style-sheet).</p>
 <p>To update the color scheme, open the <code>style.scss</code> file and adjust the color settings right at the beginning (by swapping the <a href="https://www.hexcolortool.com/#029c8c">hex-color codes</a>):</p>
-<pre class="scss"><code>$primary_color_d: #029c8c;
-$primary_color_l: #6fe0d5;
-$secondary_color_d: #674EA7;
-$secondary_color_l: #a797cf;
-$secondary_color_a: #a797cfcc;</code></pre>
+<pre class="scss"><code>$primary_color_d: #34534D;
+$primary_color_l: #94B9B2;
+$secondary_color_d: #5E443B;
+$secondary_color_l: #B3848D;</code></pre>
 <p>To then re-compile the <code>css</code> file (which is the one that is actually used within bookdown), run the following within the <em>Terminal</em> window of Rstudio.</p>
 <div class="beware">
 <p>The <em>Terminal</em> window is different from the <em>Console</em> window that you might be used to to run <code>R</code> interactively.

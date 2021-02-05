@@ -1,12 +1,11 @@
-$primary_color_d: #029c8c;
-$primary_color_l: #6fe0d5;
-$secondary_color_d: #674EA7;
-$secondary_color_l: #a797cf;
-$secondary_color_a: #a797cfcc;
+$primary_color_d: #34534D;
+$primary_color_l: #94B9B2;
+$secondary_color_d: #5E443B;
+$secondary_color_l: #B3848D;
 
 h1, h2 {
   line-height: 1.3em;
-  color: $secondary_color_d;
+  color: $secondary_color_l;
 }
 
 .c1l, .c1d, .c2l, .c2d {
@@ -20,11 +19,11 @@ h1, h2 {
 .c2d { background: $secondary_color_d; color: #ffffffcc; }
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active > a {
-  color: $primary_color_d !important;
+  color: $primary_color_l !important;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: $primary_color_d !important;
+  color: $primary_color_l !important;
 }
 
 // ruler at page bottom 
@@ -180,7 +179,7 @@ hr {
 }
 
 input:checked + .checktrue::before {
-  background: $secondary_color_a;
+  background: $secondary_color_l;
 }
 
 input:checked + .checktrue::after {
