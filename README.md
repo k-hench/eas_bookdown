@@ -19,8 +19,6 @@ remotes::install_github("hadley/emo")
 
 Please have a look at the [compiled documentation](k-hench.github.io/eas_bookdown/) for more information about this template.
 
-![](vignettes/img/eas_cropped_small.png)
-
-
-
 ---
+
+![](vignettes/img/eas_cropped_small.png)
