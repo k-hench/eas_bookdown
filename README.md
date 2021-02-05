@@ -17,7 +17,7 @@ install.packacges("remotes")
 remotes::install_github("hadley/emo")
 ```
 
-Please have a look at the [compiled documentation](k-hench.github.io/eas_bookdown/) for more information about this template.
+Please have a look at the [compiled documentation](https://k-hench.github.io/eas_bookdown/) for more information about this template.
 
 ---
 
