@@ -17,7 +17,9 @@ This template comes with a few pre-configured custom elements that can be easily
 
 ## Beware/ Think Boxes
 
-The *beware* and *think* boxes can be used by wrapping markdown text in `:::beware`/`:::think`content`:::` flags:
+These custom text boxes are adopted from [Desirée De Leon](http://desiree.rbind.io/post/2019/making-tip-boxes-with-bookdown-and-rmarkdown/) --- on her blog-post they are explained in more words and nicer pictures...
+
+The *beware* and *think* boxes can be used by wrapping markdown text in `:::beware`/`:::think`content`:::` flags.
 
 ```
 :::beware
