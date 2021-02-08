@@ -3,8 +3,27 @@ output: html_document
 editor_options:
   chunk_output_type: console
 ---
-# References
+# References and Session Info
+
+## Session Info
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "#>",
+                      collapse = TRUE)
+knitr::opts_knit$set(root.dir = '../')
+
+# load all packages once more that were used within
+# the bookdown script ({bookdown} and {emo} just for demo)
+library(bookdown)
+library(emo)
+```
+
+```{r}
+sessionInfo()
+```
+
+## References
 
 <div id="refs"></div>
-
 ---

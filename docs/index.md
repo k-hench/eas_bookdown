@@ -2,7 +2,7 @@
 title: "Ecology of Animal Societies"
 subtitle: "Bookdown Template"
 author: "Author Name"
-date: "2021-02-05"
+date: "2021-02-08"
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
